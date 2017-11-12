@@ -4,6 +4,21 @@ baseurl = "https://toniachen.com/"
 theme = "prologue"
 
 [params]
-  name = "Tonia Chen"
-  description = "UX/UI Designer"
-  copyright = "Tonia Chen"
+	name = "Tonia Chen"
+	description = "UX/UI Designer"
+	copyright = "Tonia Chen"
+
+[[params.social]]
+	medium = "email"
+	icon = "envelope"
+	link = "mailto:chenanqi1225@gmail.com"
+
+[[params.social]]
+	medium = "linkedin"
+	icon = "linkedin"
+	link = "https://www.linkedin.com/in/anqichentonia/"
+
+[[params.social]]
+	medium = "medium"
+	icon = "medium"
+	link = "https://medium.com/@toniachen"
