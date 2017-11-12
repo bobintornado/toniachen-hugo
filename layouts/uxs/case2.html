@@ -1,0 +1,15 @@
+{{ define "main" }}
+	<section id="portfolio" class="two">
+	    <div class="container" style="text-align: left">
+	        <h2>
+				{{ .Title }}
+			</h2>
+			<p>Disclaimer: To comply with my non-disclosure agreement, I have omitted and obfuscated confidential information in this case study. All information in this case study is my own and does not necessarily reflect the views of my company, only my own research study.
+			</p>
+			{{ range $i, $sequence :=  (seq 33) }}
+				<div class="page">
+				    <object width="100%" data="/case2/{{ $sequence }}.svg" type="image/svg+xml" class="page-inner"></object>
+				</div>
+			{{ end }}
+	</section>
+{{ end }}

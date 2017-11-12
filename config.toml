@@ -1,0 +1,9 @@
+languageCode = "en-us"
+title = "Tonia Chen"
+baseurl = "http://example.org/"
+theme = "prologue"
+
+[params]
+  name = "Tonia Chen"
+  description = "UX/UI Designer"
+  copyright = "Tonia Chen"
