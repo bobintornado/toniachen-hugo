@@ -8,7 +8,7 @@
 			</p>
 			{{ range $i, $sequence :=  (seq 33) }}
 				<div class="page">
-				    <object style="width:100%" data="/case2/{{ $sequence }}.svg" type="image/svg+xml"></object>
+				    <object style="max-width:100%" data="/case2/{{ $sequence }}.svg" type="image/svg+xml"></object>
 				</div>
 			{{ end }}
 	</section>
