@@ -1,0 +1,31 @@
+{{ define "main" }}
+<style>
+.wall-item {
+	width: 100%;
+}	
+</style>
+<!-- Portfolio -->
+<section id="portfolio" class="two">
+    <div class="container">
+    	<h2>iOS</h2>
+    	<br/>
+        <div class="row">
+            {{ range $i, $sequence :=  (seq 7) }}
+            <div class="4u 12u$(mobile)">
+            	<img src="/mobile/ios_{{ $sequence }}.png" class="wall-item"/>
+            </div>
+            {{ end }}
+		</div>
+		<hr>
+		<h2>Android</h2>
+		<br/>
+        <div class="row">
+            {{ range $i, $sequence :=  (seq 7) }}
+            <div class="4u 12u$(mobile)">
+                <img src="/mobile/android_{{ $sequence }}.png" class="wall-item"/>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

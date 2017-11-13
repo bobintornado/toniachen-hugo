@@ -1,4 +1,4 @@
 +++
 title = "Mobile"
-layout = "Mobile"
+layout = "mobile"
 +++
