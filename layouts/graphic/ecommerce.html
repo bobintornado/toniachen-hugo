@@ -1,0 +1,46 @@
+{{ define "main" }}
+<style>
+.wall-item {
+    width: 100%;
+}
+</style>
+
+<section id="portfolio" class="two">
+    <div class="container">
+    	<div class="row">
+    		<div class="6u 12u$(mobile)">
+    			<h2>
+    				Shopee
+    			</h2>
+    			<img src="/graphic/shopee.jpg" alt="" class="wall-item">
+    		</div>
+    		<div class="6u 12u$(mobile)">
+    			<h2>
+    				WeChat Home
+    			</h2>
+    			<img src="/graphic/wechat.jpg" alt="" class="wall-item">
+    		</div>
+    	</div>
+    	<h2>
+    		WeChat Home Breakdown
+    	</h2>
+    	<div class="row">
+    		{{ range $i, $sequence :=  (seq 6) }}
+    		<div class="4u 12u$(mobile)">
+    			<img src="/graphic//wechat/WeChat-{{ $sequence }}.png" class="wall-item"/>
+    		</div>
+    		{{ end }}
+    	</div>
+		<h2>
+			WeChat Mascot
+		</h2>
+    	<div class="row">
+    		{{ range $i, $sequence :=  (seq 6) }}
+    		<div class="4u 12u$(mobile)">
+    			<img src="/graphic//mascot/{{ $sequence }}.png" class="wall-item"/>
+    		</div>
+    		{{ end }}
+    	</div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,4 @@
++++
+title = "Namecard"
+layout = "namecard"
++++
